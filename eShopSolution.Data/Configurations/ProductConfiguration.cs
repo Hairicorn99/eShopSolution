@@ -25,7 +25,6 @@ namespace eShopSolution.Data.Configurations
 
             builder.Property(x => x.ViewCount).IsRequired().HasDefaultValue(0);
 
-
         }
     }
 }
