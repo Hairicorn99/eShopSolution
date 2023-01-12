@@ -20,6 +20,7 @@ namespace eShopSolution.Data.EF
         {
             //Config using fluentAPI
             modelBuilder.ApplyConfiguration(new CartConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductImageConfiguration());
 
             modelBuilder.ApplyConfiguration(new AppConfigConfiguration());
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
@@ -71,7 +72,7 @@ namespace eShopSolution.Data.EF
         public DbSet<Promotion> Promotions { get; set; }
 
         public DbSet<Transaction> Transactions { get; set; }
-
+        public DbSet<ProductImage> ProductImages { get; set; }
 
     }
 }
